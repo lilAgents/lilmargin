@@ -36,11 +36,11 @@ const MODES = {
 };
 
 function money(n) {
-  if (!isFinite(n)) return '—';
+  if (!isFinite(n)) return 'n/a';
   return state.sym + n.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 }
 function pct(n) {
-  if (!isFinite(n)) return '—';
+  if (!isFinite(n)) return 'n/a';
   return n.toLocaleString(undefined, { maximumFractionDigits: 1 }) + '%';
 }
 
